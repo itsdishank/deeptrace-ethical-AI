@@ -1,4 +1,4 @@
-name: deepsafe_v6
+name: deeptrace_v6
 channels:
   - defaults
 dependencies:
@@ -230,4 +230,3 @@ dependencies:
     - you-get==0.4.1555
     - youtube-dl==2021.12.17
     - yt-dlp==2022.3.8.2
-prefix: /home/siddharth/miniconda3/envs/deepsafe_v6

@@ -1,5 +1,3 @@
-# @author Siddharth
-# @website https://siddharthksah.github.io/
 import streamlit as st
 
 # favicon and page configs
@@ -423,7 +421,7 @@ if add_radio == "Detector":
                         ste.download_button(
                             label="Download data as CSV ⬇️",
                             data=csv_1,
-                            file_name='deepsafe_stats.csv',
+                            file_name='deeptrace_stats.csv',
                             mime='text/csv',
                         )
 
@@ -546,7 +544,7 @@ if add_radio == "Detector":
                         ste.download_button(
                             label="Download data as CSV ⬇️",
                             data=csv_1,
-                            file_name='deepsafe_stats.csv',
+                            file_name='deeptrace_stats.csv',
                             mime='text/csv',
                         )
 
@@ -1024,13 +1022,6 @@ if add_radio == "About":
     
     reference = []
 
-    # for i in range (int(len_list/3)):
-    #     #st.write((i+1), ". ", reference_list[3*i], (reference_list[3*i+1]), (reference_list[3*i+2]))
-    #     #reference.append((i+1))
-    #     reference.append(reference_list[3*i])
-    #     reference.append(reference_list[3*i+1])
-    #     reference.append(reference_list[3*i+2])
-
     reference = np.resize(reference_list, len_list).reshape((int(len_list/3)), 3)
     reference = pd.DataFrame(reference, columns = ['Detector','Project Website','License'])
     reference.index = np.arange(1, len(reference) + 1)
@@ -1051,67 +1042,7 @@ if add_radio == "About":
 
     st.success("This webapp is based on [Streamlit](https://streamlit.io/)!")
 
-    # st.write("\n")
-    # st.write("\n")
-    # st.write("\n")
 
-    # with st.expander("Can blockchain be used to combat Deepfake?"):
-    #     st.write("""
-    #     ELI5-- Probably, authencity of a video or a 'fingerprint' can be saved on a Blockchain.
-        
-    #     """)
-    #     st.video('https://youtu.be/mN3cvr9aClA')
-    #     #st.image("https://static.streamlit.io/examples/dice.jpg")
-    #     #st.video('https://youtu.be/cQ54GDm1eL0') 
-    #     st.write("""[Read more](https://www.wired.com/story/the-blockchain-solution-to-our-deepfake-problems/)""")
-    #     #st.snow()
-
-
-
-
-
-
-
-    #st.header("Contribute")
-    st.title("Contribute")
-    #st.subheader("Contribute")
-    st.info(
-        "This an open source project and you are welcome to **contribute** your "
-        "comments, questions, resources and apps as "
-        "[issues](https://github.com/siddharthksah/DeepSafe/issues) of or "
-        "[pull requests](https://github.com/siddharthksah/DeepSafe/pulls) "
-        "to the [source code](https://github.com/siddharthksah/DeepSafe). "
-    )
-    
-
-    # st.info(
-    #     """
-    #     Currently, this app is maintained by [Siddharth](https://siddharthksah.github.io/).
-    #     """)
-    # st.write("\n")
-    # st.write("\n")
-    # st.write("\n")
-    # st.write("\n")
-    # st.write("\n")
-    # st.write("\n")
-    
-    st.write("Made with :heart: by [Siddharth](https://siddharthksah.github.io/)")
-
-
-    # with st.expander("TechStack"):
-    #     st.markdown("![Streamlit](https://img.shields.io/badge/streamlit-%E2%9C%94-green)")
-    #     st.markdown("![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)")
-    #     st.markdown("![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)")
-    #     st.markdown("![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)")
-    #     st.markdown("![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)")
-    #     st.markdown("![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)")
-    #     st.markdown("![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)")
-    #     st.markdown("![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)")
-    #     st.markdown("![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)")
-    #     st.markdown("![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)")
-    #     st.markdown("![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)")
-    #     st.markdown("![Dash](https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white)")
-        
 
     
     if st.button("Something's wrong? Feedback"):

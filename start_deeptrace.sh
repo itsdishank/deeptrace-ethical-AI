@@ -7,7 +7,7 @@ export STREAMLIT_CLIENT_SHOWERRORDETAILS=false
 
 # Activate Conda environment
 eval "$(conda shell.bash hook)"
-conda activate deepsafe
+conda activate deeptrace
 
 # Run Streamlit
 streamlit run main.py \
