@@ -1,0 +1,5 @@
+filename,label,demographic
+real_male.jpg,0,Male
+fake_male.jpg,1,Male
+real_female.jpg,0,Female
+fake_female.jpg,1,Female
